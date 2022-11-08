@@ -1,0 +1,376 @@
+@font-face {
+  font-family: Cocogoose;
+  src: url('/assets/COCOGOOSE.TTF');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Cocogoose;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.container {
+  /* padding: 0 1rem; */
+  margin: 0;
+  /* max-width: 68rem; */
+  width: 100%;
+  background-color: #b0e0e6;
+}
+
+.header .nav {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-basis: auto;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.2rem 0;
+  margin: 0 auto;
+}
+
+.header .nav .nav-menu .nav-menu__item {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-basis: auto;
+}
+
+.nav-menu__link {
+  margin: 0 2rem 0 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero {
+  display: grid;
+  /* grid-template-columns: repeat(1, 1fr); */
+  grid-gap: -0.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero .hero-image__main {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-text .hero-text__main {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: inherit;
+  text-align: center;
+  padding-top: -200px;
+  color: #fb544f;
+}
+
+.about {
+  background-color: #f6b41b;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.about .content .text {
+  margin-left: 8rem;
+  align-items: center;
+}
+
+#judul {
+  font-size: 36px;
+  padding-bottom: 20px;
+  color: #4169e1;
+}
+
+.scrolled.isi p {
+  color: #4169e1;
+  font-weight: 100;
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.sepeda {
+  background-color: #b0e0e6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.scrolled.foto_sepeda {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.foto_sepeda {
+  margin-top: -300px;
+  width: 110%;
+  height: 110%;
+  margin-left: 8rem;
+  /* animation: slide-in-left 1s ease-in-out both; */
+}
+
+.tulisan {
+  font-weight: 900;
+  font-size: 2.2rem;
+}
+
+.tex1 {
+  color: #fb544f;
+  margin-bottom: 2em;
+  width: 40%;
+}
+
+.scrolled.tex1,
+.scrolled.tex2 {
+  animation: slide-in-right 0.2s ease-in-out both;
+}
+
+.tex2 {
+  color: #26569d;
+  width: 40%;
+}
+
+.visimisi {
+  background-color: #b0e0e6;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16rem; */
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.kata_kata {
+  margin-left: 8rem;
+}
+
+.scrolled.kata_kata {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+.teks1 {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.judul1 {
+  color: #f6b41b;
+  font-size: 3rem;
+  margin-bottom: -14px;
+}
+
+.deskripsi1 {
+  font-size: 1rem;
+  align-self: end;
+}
+
+.teks2 {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.judul2 {
+  color: #f6b41b;
+  font-size: 3rem;
+  margin-bottom: -14px;
+}
+
+.deskripsi2 {
+  font-size: 1rem;
+  align-self: end;
+}
+
+.teks3 {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.judul3 {
+  color: #f6b41b;
+  font-size: 3rem;
+  margin-bottom: -14px;
+}
+
+.deskripsi3 {
+  font-size: 1rem;
+  align-self: end;
+}
+
+.teks4 {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.judul4 {
+  color: #f6b41b;
+  font-size: 3rem;
+  margin-bottom: -14px;
+}
+
+.deskripsi4 {
+  font-size: 1rem;
+  align-self: end;
+}
+
+.kontak {
+  background-color: #b0e0e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrolled.WA {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+#contact__us {
+  color: #fb544f;
+  display: block;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: -140px;
+  background-color: #b0e0e6;
+}
+
+@media screen and (max-width: 1080px) {
+  .hero-image {
+    width: 65%;
+    height: 65%;
+  }
+  .container {
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+    display: block;
+    padding-left: 1rem;
+  }
+  .cuci_sepatu img {
+    width: 60%;
+    height: 60%;
+    justify-content: center;
+    align-self: center;
+  }
+  .sepeda {
+    display: block;
+  }
+
+  .isi p {
+    font-size: 0.8rem;
+  }
+
+  .foto_sepeda {
+    width: 60%;
+    height: 60%;
+    margin-top: 50px;
+  }
+
+  .tulisan {
+    font-size: 1rem;
+    margin-left: 8rem;
+  }
+
+  .visimisi .judul1,
+  .judul2,
+  .judul3,
+  .judul4 {
+    font-size: 2rem;
+  }
+
+  .visimisi .deskripsi1,
+  .deskripsi2,
+  .deskripsi3,
+  .deskripsi4 {
+    font-size: 0.6rem;
+  }
+
+  .contact__us {
+    font-size: 12px;
+    display: block;
+    padding-bottom: 200px;
+  }
+
+  .kontak {
+    justify-content: center;
+    align-self: center;
+  }
+
+  .WA {
+    padding-top: 200px;
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
